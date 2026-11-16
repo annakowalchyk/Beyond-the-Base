@@ -1,0 +1,28 @@
+/* Colorful Quarto DASHBOARD styling. Edit the colors below to personalize it. */
+:root {
+  --ink: #24233b;
+  --purple: #6846cf;
+  --teal: #16a6a0;
+  --coral: #ed7289;
+  --soft: #f8f7ff;
+}
+body { background: linear-gradient(145deg, #f3f0ff 0%, #f6fbff 53%, #fff5f8 100%); color: var(--ink); }
+.navbar { background: linear-gradient(100deg, #30245f, #6540c5 65%, #9b58c5) !important; box-shadow: 0 4px 18px #35246a20; }
+.navbar, .navbar a { color: white !important; }
+.card { border: 1px solid #e9e5f5; border-radius: 17px !important; box-shadow: 0 7px 22px #46398312; overflow: hidden; background: #fff; }
+.card-header { background: #fff !important; font-weight: 800; letter-spacing: .015em; color: #453178; border-bottom: 1px solid #f0ebfa; }
+.card-body { padding: 1.25rem 1.5rem; }
+.intro-card { background: linear-gradient(125deg, #48318f, #7754c7 65%, #ae69bf); color: #fff; border: 0; }
+.intro-card .card-body { padding: clamp(1.5rem, 4vw, 3rem); }
+.intro-card h1 { font-size: clamp(1.65rem, 3.5vw, 3rem); color: #fff; font-weight: 850; margin: .55rem 0; line-height: 1.14; }
+.intro-card p { color: #f5efff; max-width: 70ch; }
+.eyebrow { color: #e0cdff; font-size: .75rem; text-transform: uppercase; letter-spacing: .17em; font-weight: 800; }
+.tagline { display: inline-block; border: 1px solid #ffffff70; border-radius: 40px; padding: .35rem .85rem; color: white; font-size: .85rem; margin-top: .5rem; }
+.hero-card { border-top: 5px solid var(--purple); }
+.chart-placeholder { min-height: 230px; border: 2px dashed #cbbcf4; background: linear-gradient(135deg, #f9f7ff, #f4fbff); border-radius: 14px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 1.5rem; color: #645987; }
+.chart-placeholder p { max-width: 650px; }
+.chart-placeholder strong { color: #5136a6; }
+.credits-card { border-left: 5px solid var(--teal); }
+.credits-card a { color: #5337ae; font-weight: 700; }
+.card ul { padding-left: 1.2rem; }
+@media (max-width: 650px) { .card-body { padding: 1rem; } .chart-placeholder { min-height: 190px; } .intro-card .card-body { padding: 1.35rem; } }
